@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     //Instintiate CalculatorFunction class object with instance of current activity
     CalculatorFunction performMath = new CalculatorFunction(this);
 
-
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
