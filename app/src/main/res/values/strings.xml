@@ -16,9 +16,6 @@
     <string name="multiply">*</string>
     <string name="divide">/</string>
     <string name="dot">.</string>
-    <string name="ten_percent">10%</string>
-    <string name="fifteen_percent">15%</string>
-    <string name="twenty_percent">20%</string>
     <string name="save">SAV</string>
     <string name="retrieve">RET</string>
     <string name="negate">-+</string>
@@ -26,5 +23,9 @@
     <string name="clear">C</string>
     <string name="equal">=</string>
     <string name="decimal_zero">0.0</string>
+    <string name="loading">Loading...</string>
+    <string name="lowest_tip">10%</string>
+    <string name="middle_tip">15%</string>
+    <string name="highest_tip">20%</string>
 
 </resources>

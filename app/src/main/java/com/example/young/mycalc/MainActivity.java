@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     //Instintiate CalculatorFunction class object with instance of current activity
     CalculatorFunction performMath = new CalculatorFunction(this);
+    double lowestTipPercent = 0.10;
+    double middleTipPercent = 0.15;
+    double highestTipPercent = 0.20;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -192,11 +195,44 @@ public class MainActivity extends AppCompatActivity {
     }
     //save the current value into variable
     public void save(View view){
-
+        performMath.saveAValue();
     }
     //retrive the current value into variable
     public void retrieve(View view){
-
+        performMath.retrieveAValue();
     }
+    public void lowestTip(View view){
+        tipCalculation(lowestTipPercent);
+    }
+    public void middleTip(View view){
+        tipCalculation(middleTipPercent);
+    }
+    public void highestTip(View view){
+        tipCalculation(highestTipPercent);
+    }
+
+    private void tipCalculation(double tipPercent) {
+        double subTotal;
+        double tip;
+        double total;
+        if (performMath.getResultInUse()) {
+            subTotal = performMath.getResult();
+        }
+        else{
+            subTotal = Double.valueOf(performMath.getInputNumber());
+        }
+        tip = subTotal * tipPercent;
+        total = subTotal + tip;
+        performMath.clearAll();
+        String history = subTotal + " + " + tipPercent*100 + "% = ";
+        performMath.setHistory(history);
+        performMath.displayHistory("");
+        performMath.setResultInUse(true);
+        performMath.setResult(total);
+        performMath.setInputNumber(String.valueOf(total));
+        performMath.displayResult(total);
+    }
+
+
     //end of onclick calls for math operation
 }

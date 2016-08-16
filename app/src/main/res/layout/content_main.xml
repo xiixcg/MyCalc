@@ -54,32 +54,36 @@ tools:showIn="@layout/activity_main">
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/ten_percent_button"
+                android:id="@+id/lowest_tip_button"
                 android:textSize="30sp"
-                android:text="@string/ten_percent"
+                android:text="@string/lowest_tip"
                 android:textAlignment="center"
                 android:background="@color/colorRegularButton"
-                android:onClick="tenPercent"/>
+                android:onClick="lowestTip"
+                android:longClickable="true"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/fifteen_percent_button"
+                android:id="@+id/middle_tip_button"
                 android:textSize="30sp"
-                android:text="@string/fifteen_percent"
+                android:text="@string/middle_tip"
                 android:textAlignment="center"
                 android:background="@color/colorRegularButton"
-                android:onClick="fifteenPercent"/>
+                android:onClick="middleTip"
+                android:longClickable="true"
+                />
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/twenty_percent_button"
+                android:id="@+id/highest_tip_button"
                 android:textSize="30sp"
-                android:text="@string/twenty_percent"
+                android:text="@string/highest_tip"
                 android:textAlignment="center"
                 android:background="@color/colorRegularButton"
-                android:onClick="twentyPercent"/>
+                android:onClick="highestTip"
+                android:longClickable="true"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
